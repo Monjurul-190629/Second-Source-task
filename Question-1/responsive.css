@@ -1,12 +1,23 @@
 /* Responsive Design */
 @media (max-width: 768px) {
-    .nav {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+    .menu-icon {
+        display: block;
     }
 
-    .nav a {
-        margin: 0.5rem 0;
+    .nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #444;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        display: none;
+        padding: 1rem;
+    }
+
+    /* Show nav when toggle is checked */
+    .menu-toggle:checked+.menu-icon+.nav {
+        display: flex;
     }
 }

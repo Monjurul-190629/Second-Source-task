@@ -1,36 +1,49 @@
 /* Initial */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
 /* Header */
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #333;
-  color: white;
-  padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #444;
+    color: white;
+    padding: 1rem 2rem;
+    position: relative;
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.nav {
+    display: flex;
+    gap: 1.5rem;
 }
 
 .nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 1.5rem;
+    color: white;
+    text-decoration: none;
 }
 
-.nav a:hover {
-  text-decoration: underline;
+.menu-toggle {
+    display: none;
+}
+
+/* Hamburger icon styling */
+.menu-icon {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
 }
