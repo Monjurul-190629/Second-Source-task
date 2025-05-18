@@ -20,4 +20,16 @@
     .menu-toggle:checked+.menu-icon+.nav {
         display: flex;
     }
+
+
+    /* Main */
+    .main {
+        flex-direction: column;
+    }
+    .content{
+        height: 380px;
+    }
+    .sidebar{
+        height: 380px;
+    }
 }
